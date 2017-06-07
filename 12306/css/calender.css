@@ -1,0 +1,46 @@
+.toublecalender{
+	width: 736px;
+	height: 232px;
+	position: absolute;
+	top: 159px;
+	left: 288px;
+	z-index: 10;
+	display: none;
+}
+.calender{
+	width: 368px;
+	height: 230px;
+	margin:0 auto;
+	border:1px solid #000;
+	background-color: #ffffff;
+	float: left;
+	border-right-color: #ffffff; 
+}
+.calender2{
+	width: 368px;
+	height: 230px;
+	margin:0 auto;
+	border:1px solid #000;
+	background-color: #ffffff;
+	float: left;
+	border-left-color: #ffffff; 
+}
+.datetable{
+	width: 296px;
+	margin:0 auto;
+}
+.calender-datetitle{
+	width: 296px;
+	height: 46px;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	margin:0 auto;
+}
+.toublecalender-close img{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	cursor: pointer;
+}

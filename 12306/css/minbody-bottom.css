@@ -1,0 +1,20 @@
+.mainbody-bottom-table{
+	width: 1049px;
+	height: 104px;
+	margin:0 auto;
+}
+/*.mainbody-bottom-thead{
+	background-color: #316745;
+}*/
+.mainbody-bottom-thead-tr{
+	height: 104px;
+	text-align: center;
+	background-color: #316745;
+	color: #fff;
+}
+.mainbody-bottom-tbody-tr1{
+	background-color: #efe1b0;
+}
+.mainbody-bottom-tbody-tr2{
+	background-color: #efdb91；
+}
