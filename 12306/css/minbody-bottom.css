@@ -18,3 +18,7 @@
 .mainbody-bottom-tbody-tr2{
 	background-color: #efdb91；
 }
+.table_tr td{
+	text-align: center;
+	height: 50px;
+}

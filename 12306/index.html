@@ -1,177 +1,167 @@
 <!DOCTYPE html>
 <html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/ajax.js" type="text/javascript" charset="utf-8" async defer></script>
 <head>
-	<title>模仿12306</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/minbody.css">
-	<link rel="stylesheet" type="text/css" href="css/minbody-bottom.css">
-	<link rel="stylesheet" type="text/css" href="css/others.css">
-	<link rel="stylesheet" type="text/css" href="css/calender.css">
-	<script src="js/12306.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <title>模仿12306</title>
+    <meta charset="utf-8">   
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/minbody.css">
+    <link rel="stylesheet" type="text/css" href="css/minbody-bottom.css">
+    <link rel="stylesheet" type="text/css" href="css/others.css">
+    <link rel="stylesheet" type="text/css" href="css/calender.css">
+    <script src="js/12306.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
+
 <body>
-	<div class="outside2">
-		<div class="header2">
-			<div class="header">
-				<div class="header-top">
-					<div class="header-top-left">
-						<p class="header-top-left-p">客服热线：12306</p>
-						<p class="header-top-left-p">意见反馈：12306yjfk@railsSS.com.cn</p>
-						<p class="header-top-left-p">安装手机12306</p>
-					</div>
-					<div class="header-top-middle">
-						<img src="img/logo.jpg" alt="logo" class="header-top-middle-img">
-						<h1 class="header-top-middle-h1">中国铁路客户服务中心</h1>
-					</div>
-					<div class="header-top-right">
-						<a href="">注册</a>
-						<span>|</span>
-						<a href="">登录</a>
-					</div>
-				</div>
-				<div class="header-bottom">
-					<ul>
-						<li>客运首页</li>
-						<li>车票预定</li>
-						<li>余票查询</li>
-						<li>出行向导</li>
-						<li>信息服务</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="outside">			
-		<div class="mainbody">
-			<div class="mainbody-top">
-				<div class="mainbody-top-from  mainbody-top-one">
-					<h2 href="" >出发地</h2>
-					<h6>From</h6>				
-					<input type="text" name="from" value="北京" id="mainbody-top-from-input1">
-				</div>
-
-				<div class="mainbody-top-imgone" >
-					<img src="img/shuangjiantou.png" alt="" id="mainbody-top-imgone-img">
-				</div>	
-
-				<div class="mainbody-top-to  mainbody-top-one">
-					<h2 href="">到达地</h2>
-					<h6>To</h6>
-					<input type="text" name="to" value="上海" id="mainbody-top-from-input2">
-				</div>
-
-				<div class="mainbody-top-triangle-one">
-
-				</div>
-
-				<div class="mainbody-top-set-out-data  mainbody-top-one">
-					<h2 href="">出发日期</h2>
-					<h6>Set out data</h6>					
-					<input type="text" name="set-out-data" value="2017-5-21 星期日" id="set-out-data">
-				</div>
-
-				<div class="toublecalender" id="toublecalender">
-					<div class="calender" id="calender">
-						<div class="calender-datetitle" id="calender-datetitle">
-							<h3>2016年10月</h3>
-						</div>
-						<div class="calender-outsidetable">
-							<table class="datetable">
-								<thead class="datetable-datehead" id="calender-datehead">
-									<tr>
-										<th>日</th>
-										<th>一</th>
-										<th>二</th>
-										<th>三</th>
-										<th>四</th>
-										<th>五</th>
-										<th>六</th>
-									</tr>
-								</thead>
-								<tbody class="calender-databody" id="calender-databody">
-
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="calender2" id="calender2">
-						<div class="calender-datetitle" id="calender-datetitle2">
-							<h3>2016年10月</h3>
-						</div>
-						<div class="calender-outsidetable">
-							<table class="datetable">
-								<thead class="datetable-datehead" id="calender-datehead2">
-									<tr>
-										<th>日</th>
-										<th>一</th>
-										<th>二</th>
-										<th>三</th>
-										<th>四</th>
-										<th>五</th>
-										<th>六</th>
-									</tr>
-								</thead>
-								<tbody class="calender-databody" id="calender-databody2">
-
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="toublecalender-close">
-						<img src="img/close.jpg" alt="close" id="toublecalender-close-img">
-					</div>
-				</div>
-				
-				<div class="showcity">
-
-				</div>
-				<div class="mainbody-top-triangle-two">
-
-				</div>
-				<div class="mainbody-top-return-data  mainbody-top-one"> 
-					<h2 href="">返程日期</h2>
-					<h6>Return data</h6>
-					<input type="text" name="return-data">	
-				</div>	
-				<div class="mainbody-top-form">
-					<form action="" method="get" accept-charset="utf-8">
-						<label><input type="checkbox" name="">返程票</label></br>
-						<label><input type="checkbox" name="">学生票</label>
-					</form>
-				</div>
-				<div class="mainbody-top-way">
-					<p><span class="way">常用路线：</span>北京-上海  北京-济南  济南-兰州  石家庄-南京  郑州-武汉  天津-大连  南昌-上海  厦门-杭州</p>
-				</div>
-				<div class="mainbody-top-select">
-					<p><span class="select">快速选择：</span>今天  明天  后天</p>
-				</div>
-
-			</div>
-			<div class="mainbody-middle">
-
-				<div class="mainbody-middle-one two">
-					<p>席别</p>
-					<div class="two-div"></div>
-				</div>
-
-				<div class="mainbody-middle-two two">
-					<p>列车类型</p>
-					<div class="two-div"></div>
-				</div>
-
-				<div class="mainbody-middle-three two">
-					<p>出发时间</p>
-					<div class="two-div"></div>
-				</div>
-
-				<div class="mainbody-middle-four two">
-					<p>乘车人</p>
-					<div class="two-div"></div>
-				</div>
-					<!-- <div>
+    <div class="outside2">
+        <div class="header2">
+            <div class="header">
+                <div class="header-top">
+                    <div class="header-top-left">
+                        <p class="header-top-left-p">客服热线：12306</p>
+                        <p class="header-top-left-p">意见反馈：12306yjfk@railsSS.com.cn</p>
+                        <p class="header-top-left-p">安装手机12306</p>
+                    </div>
+                    <div class="header-top-middle">
+                        <img src="img/logo.jpg" alt="logo" class="header-top-middle-img">
+                        <h1 class="header-top-middle-h1">中国铁路客户服务中心</h1>
+                    </div>
+                    <div class="header-top-right">
+                        <a href="">注册</a>
+                        <span>|</span>
+                        <a href="">登录</a>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <ul>
+                        <li>客运首页</li>
+                        <li>车票预定</li>
+                        <li>余票查询</li>
+                        <li>出行向导</li>
+                        <li>信息服务</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="outside">
+        <div class="mainbody">
+            <div class="mainbody-top">
+                <div class="mainbody-top-from  mainbody-top-one">
+                    <h2 href="">出发地</h2>
+                    <h6>From</h6>
+                    <input type="text" name="from" value="北京" id="mainbody-top-from-input1">
+                </div>
+                <div class="mainbody-top-imgone">
+                    <img src="img/shuangjiantou.png" alt="" id="mainbody-top-imgone-img">
+                </div>
+                <div class="mainbody-top-to  mainbody-top-one">
+                    <h2 href="">到达地</h2>
+                    <h6>To</h6>
+                    <input type="text" name="to" value="上海" id="mainbody-top-from-input2">
+                </div>
+                <div class="mainbody-top-triangle-one">
+                </div>
+                <div class="mainbody-top-set-out-data  mainbody-top-one">
+                    <h2 href="">出发日期</h2>
+                    <h6>Set out data</h6>
+                    <input type="text" name="set-out-data" value="2017-5-21 星期日" id="set-out-data">
+                </div>
+                <div class="toublecalender" id="toublecalender">
+                    <div class="calender" id="calender">
+                        <div class="calender-datetitle" id="calender-datetitle">
+                            <h3>2016年10月</h3>
+                        </div>
+                        <div class="calender-outsidetable">
+                            <table class="datetable">
+                                <thead class="datetable-datehead" id="calender-datehead">
+                                    <tr>
+                                        <th>日</th>
+                                        <th>一</th>
+                                        <th>二</th>
+                                        <th>三</th>
+                                        <th>四</th>
+                                        <th>五</th>
+                                        <th>六</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="calender-databody" id="calender-databody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="calender2" id="calender2">
+                        <div class="calender-datetitle" id="calender-datetitle2">
+                            <h3>2016年10月</h3>
+                        </div>
+                        <div class="calender-outsidetable">
+                            <table class="datetable">
+                                <thead class="datetable-datehead" id="calender-datehead2">
+                                    <tr>
+                                        <th>日</th>
+                                        <th>一</th>
+                                        <th>二</th>
+                                        <th>三</th>
+                                        <th>四</th>
+                                        <th>五</th>
+                                        <th>六</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="calender-databody" id="calender-databody2">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="toublecalender-close">
+                        <img src="img/close.jpg" alt="close" id="toublecalender-close-img">
+                    </div>
+                </div>
+                <div class="showcity">
+                </div>
+                <div class="mainbody-top-triangle-two">
+                </div>
+                <div class="mainbody-top-return-data  mainbody-top-one">
+                    <h2 href="">返程日期</h2>
+                    <h6>Return data</h6>
+                    <input type="text" name="return-data">
+                </div>
+                <div class="mainbody-top-form">
+                    <form action="" method="get" accept-charset="utf-8">
+                        <label>
+                            <input type="checkbox" name="">返程票</label>
+                        </br>
+                        <label>
+                            <input type="checkbox" name="">学生票</label>
+                    </form>
+                </div>
+                <div class="mainbody-top-way">
+                    <p><span class="way">常用路线：</span>北京-上海 北京-济南 济南-兰州 石家庄-南京 郑州-武汉 天津-大连 南昌-上海 厦门-杭州</p>
+                </div>
+                <div class="mainbody-top-select">
+                    <p><span class="select">快速选择：</span>今天 明天 后天</p>
+                </div>
+            </div>
+            <div class="mainbody-middle">
+                <div class="mainbody-middle-one two">
+                    <p>席别</p>
+                    <div class="two-div"></div>
+                </div>
+                <div class="mainbody-middle-two two">
+                    <p>列车类型</p>
+                    <div class="two-div"></div>
+                </div>
+                <div class="mainbody-middle-three two">
+                    <p>出发时间</p>
+                    <div class="two-div"></div>
+                </div>
+                <div class="mainbody-middle-four two">
+                    <p>乘车人</p>
+                    <div class="two-div"></div>
+                </div>
+                <!-- <div>
 						<nav class="mainbody-middle-nav">
 							<a href="#" title="" class="mainbody-middle-nav-a">席别</a>
 							<a href="#" title="" class="mainbody-middle-nav-a">列车类型</a>
@@ -179,94 +169,93 @@
 							<a href="#" title="" class="mainbody-middle-nav-a">乘车人</a>
 						</nav>	
 					</div>	 -->
-					<div class="mainbody-middle-button">
-						<input type="button" name="" value="&nbsp;查询车票" id="gradient">
-					</div>
-				</div>
-				<div class="mainbody-bottom">
-					<table class="mainbody-bottom-table">
-						<!-- <caption>table title and/or explanatory text</caption> -->
-						<thead class="mainbody-bottom-thead">
-							<tr class="mainbody-bottom-thead-tr">
-								<th style="width: 78px">车次</th>
-								<th style="width: 84px">出发站</br>到达站</th>
-								<th style="width: 88px">出发时间</br>到达时间</th>
-								<th style="width: 60px">历时</th>
-								<th style="width: 68px">商务座</th>
-								<th style="width: 60px">特等座</th>
-								<th style="width: 60px">一等座</th>
-								<th style="width: 62px">二等座</th>
-								<th style="width: 60px">高级</br>软卧</th>
-								<th style="width: 56px">软卧</th>
-								<th style="width: 60px">硬卧</th>
-								<th style="width: 63px">软座</th>
-								<th style="width: 60px">硬座</th>
-								<th style="width: 58px">无座</th>
-								<th style="width: 61px">其他</th>
-								<th style="width: 71px">购买</th>
-								<!-- <th colspan="" rowspan="" headers="" scope=""></th>
+                <div class="mainbody-middle-button">
+                    <input type="button" name="" value="&nbsp;查询车票" id="gradient">
+                </div>
+            </div>
+            <div class="mainbody-bottom">
+                <table class="mainbody-bottom-table" id="table">
+                    <!-- <caption>table title and/or explanatory text</caption> -->
+                    <thead class="mainbody-bottom-thead">
+                        <tr class="mainbody-bottom-thead-tr">
+                            <th >车次</th>         
+                            <th>出发站</th>
+                            <th>到达站</th>
+                            <th>出发时间</th>
+                            <th>到达时间</th>
+                            <th>商务座</th>
+                            <th>特等座</th>
+                            <th>一等座</th>
+                            <th>二等座</th>
+                            <th>价格</th>
+                            <th>是否正点到达</th>
+                            <th>运行时间</th>
+                            <th>购买</th>
+                            <!-- <th colspan="" rowspan="" headers="" scope=""></th>
 								 colspan设置单元格可横跨的列数。
 								 rowspan规定单元格可横跨的行数。
 								 headers由空格分隔的表头单元格 ID 列表，为数据单元格提供表头信息。
 								 scope定义将表头数据与单元数据相关联的方法。-->
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="mainbody-bottom-tbody-tr1 tbody-tr">
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr class="mainbody-bottom-tbody-tr2 tbody-tr">
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr class="mainbody-bottom-tbody-tr3 tbody-tr">
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</body>
-		</html>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!--  <tr class="mainbody-bottom-tbody-tr1 tbody-tr" id="tr_one">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="mainbody-bottom-tbody-tr2 tbody-tr">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="mainbody-bottom-tbody-tr3 tbody-tr">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr> -->
